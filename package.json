@@ -1,0 +1,22 @@
+{
+  "name": "net.ra-studio.uitoolkit.manipulators",
+  "version": "1.0.0",
+  "displayName": "UI Toolkit Manipulators",
+  "description": "A collection of custom manipulators for Unity UI Toolkit",
+  "unity": "2021.3",
+  "documentationUrl": "https://github.com/RA-StudioX/UIToolkitManipulators/blob/main/Documentation~/UIToolkitManipulators.md",
+  "changelogUrl": "https://github.com/RA-StudioX/UIToolkitManipulators/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/RA-StudioX/UIToolkitManipulators/blob/main/LICENSE.md",
+  "dependencies": {},
+  "keywords": [
+    "ui",
+    "toolkit",
+    "manipulator",
+    "ui toolkit"
+  ],
+  "author": {
+    "name": "Rafael Azriaiev",
+    "email": "contact@ra-studio.net",
+    "url": "https://ra-studio.net"
+  }
+}
