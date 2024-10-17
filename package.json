@@ -12,7 +12,11 @@
     "ui",
     "toolkit",
     "manipulator",
-    "ui toolkit"
+    "ui toolkit",
+    "drag",
+    "resize",
+    "click",
+    "hover"
   ],
   "author": {
     "name": "Rafael Azriaiev",

@@ -11,16 +11,17 @@ namespace RAStudio.UIToolkit.Manipulators
     {
         private Action m_DoubleClickAction;
         private float m_LastClickTime;
-        private const float DoubleClickTimeThreshold = 0.3f; // Adjust this value to change the double-click speed sensitivity
+        private float DoubleClickTimeThreshold; // Adjust this value to change the double-click speed sensitivity
 
         /// <summary>
         /// Initializes a new instance of the DoubleClickManipulator class.
         /// </summary>
         /// <param name="doubleClickAction">The action to perform on double-click.</param>
-        public DoubleClickManipulator(Action doubleClickAction)
+        public DoubleClickManipulator(Action doubleClickAction,float doubleClickTimeThreshold = 0.3f)
         {
             m_DoubleClickAction = doubleClickAction;
             m_LastClickTime = 0f;
+            DoubleClickTimeThreshold = doubleClickTimeThreshold;
             activators.Add(new ManipulatorActivationFilter { button = MouseButton.LeftMouse });
         }
 

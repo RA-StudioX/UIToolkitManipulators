@@ -12,9 +12,11 @@ UI Toolkit Manipulators is a Unity package that provides a collection of custom 
 
 ## Features
 
-- Custom manipulators for UI Toolkit
-- Easy integration with existing UI Toolkit projects
-- Extensible architecture for creating your own manipulators
+- DraggableManipulator: Allows UI elements to be dragged
+- ResizableManipulator: Enables resizing of UI elements
+- ClickableManipulator: Handles click events on UI elements
+- DoubleClickManipulator: Detects double-click events on UI elements
+- HoverManipulator: Manages hover states for UI elements
 
 ## Installation
 
@@ -27,7 +29,20 @@ To install this package, follow these steps:
 
 ## Usage
 
-[Provide basic usage instructions here]
+Here's a quick example of how to use the DraggableManipulator:
+
+```csharp
+using UnityEngine.UIElements;
+using RAStudio.UIToolkit.Manipulators;
+
+public class MyCustomElement : VisualElement
+{
+    public MyCustomElement()
+    {
+        this.AddManipulator(new DraggableManipulator());
+    }
+}
+```
 
 ## Documentation
 
