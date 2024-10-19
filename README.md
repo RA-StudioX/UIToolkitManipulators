@@ -63,7 +63,7 @@ This package is licensed under the MIT License. See the [LICENSE](https://github
 
 ## Author
 
-Rafael Azriaiev
+RA Studio
 
 - Email: contact@ra-studio.net
 - Website: https://ra-studio.net

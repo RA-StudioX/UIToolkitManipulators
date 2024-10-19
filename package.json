@@ -1,6 +1,6 @@
 {
   "name": "net.ra-studio.uitoolkit.manipulators",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "UI Toolkit Manipulators",
   "description": "A collection of custom manipulators for Unity UI Toolkit",
   "unity": "2021.3",
@@ -19,7 +19,7 @@
     "hover"
   ],
   "author": {
-    "name": "Rafael Azriaiev",
+    "name": "RA Studio",
     "email": "contact@ra-studio.net",
     "url": "https://ra-studio.net"
   }

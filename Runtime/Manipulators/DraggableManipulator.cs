@@ -50,7 +50,7 @@ namespace RAStudio.UIToolkit.Manipulators
                 return;
             }
 
-            if (CanStartManipulation(e))
+            if (CanStartManipulation(e) && IsPointDirectlyOnTarget(e.localPosition))
             {
                 m_Start = e.localPosition;
                 m_PointerId = e.pointerId;
@@ -79,6 +79,18 @@ namespace RAStudio.UIToolkit.Manipulators
             m_Active = false;
             target.ReleaseMouse();
             e.StopPropagation();
+        }
+
+        private bool IsPointDirectlyOnTarget(Vector2 localPoint)
+        {
+            // Convert local point to screen space
+            Vector2 screenPoint = target.LocalToWorld(localPoint);
+
+            // Perform hit test at the screen point
+            VisualElement hitElement = target.panel.Pick(screenPoint);
+
+            // Check if the hit element is exactly our target
+            return hitElement == target;
         }
     }
 }
